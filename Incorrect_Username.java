@@ -8,7 +8,7 @@ public class Incorrect_Username {
 		  System.setProperty("webdriver.chrome.driver", "/Isha's Files/selenium/chromedriver");
 		  WebDriver driver = new ChromeDriver();
 		  String currentWindow = driver.getWindowHandle();
-		  // driver.switchTo().window(currentWindow);
+		   driver.switchTo().window(currentWindow);
 		  //  Enter Incorrect Username
 		  driver.get("https://yoda.shopsocially.com/store/login");
 		  driver.findElement(By.id("id_email")).sendKeys("nachiiiket+selenium");
